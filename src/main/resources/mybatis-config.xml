@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE configuration PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-config.dtd">
+ <!--
+ 全局的配置文件:  mybatis-config.xml,  有序
+        properties（属性）  加载properties文件
+        settings（全局配置参数）  缓存
+        typeAliases（类型别名）    类型别名
+        typeHandlers（类型处理器）
+        objectFactory（对象工厂）
+        plugins（插件）    通用Mapper   分页插件
+        environments（环境集合属性对象）
+        environment（环境子属性对象）
+        transactionManager（事务管理）
+        dataSource（数据源）
+        mappers（映射器）
+ -->
+<configuration>
+    <!--导入jdbc配置文件-->
+    <properties resource="jdbc.properties">
+        <!--配置优先级文件高于语句：如下，语句无效-->
+        <property name="jdbc.user" value="123"/>
+    </properties>
+    <!--给类的全限定名取别名，为了方便-->
+<!--    <typeAliases>
+        &lt;!&ndash;单个设置&ndash;&gt;
+        &lt;!&ndash;<typeAlias type="com.ssmStudy.pojo.Student" alias="Student"/>&ndash;&gt;
+        &lt;!&ndash;批量设置&ndash;&gt;
+        <package name="com.ssmStudy.pojo"/>
+    </typeAliases>-->
+    <!--指定log4j实现日志-->
+    <settings>
+        <setting name="logImpl" value="LOG4J"/>
+    </settings>
+    <environments default="ssmCourse">
+        <!--配置mybatis环境-->
+        <environment id="ssmCourse">
+            <!--指定事务管理的类型，这里简单使用Java的JDBC的提交和回滚设置-->
+            <transactionManager type="JDBC"></transactionManager>
+            <!--dataSource 指连接源配置，POOLED是JDBC连接对象的数据源连接池的实现,这里使用阿里的Druid连接池-->
+            <dataSource type="POOLED">
+                <property name="driver" value="${jdbc.className}"/>
+                <property name="url" value="${jdbc.url}"/>
+                <property name="username" value="${jdbc.user}"/>
+                <property name="password" value="${jdbc.password}"/>
+            </dataSource>
+        </environment>
+    </environments>
+    <mappers>
+        <mapper resource="mapper/studentMapper.xml"/>
+        <mapper resource="mapper/studentMapper2.xml"/>
+    </mappers>
+</configuration>

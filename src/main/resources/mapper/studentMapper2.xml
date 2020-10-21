@@ -1,0 +1,31 @@
+<!DOCTYPE mapper
+        PUBLIC "-//mybati.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.ssmStudy.dao.studentMapper2">
+    <!--一对多查询-->
+    <!-- sql关联时以多方为准，join时要注意 -->
+    <select id="selectStuP" resultMap="schoolRollMap" parameterType="string">
+        select * from schoolroll left join student on schoolroll.stu_no=student.number where student.name=#{name}
+    </select>
+        <resultMap id="studentMap" type="com.ssmStudy.pojo.Student">
+            <id property="number" column="number"/>
+            <result property="name" column="name"/>
+            <result property="age" column="age"/>
+            <result property="sex" column="sex"/>
+            <result property="grade" column="grade"/>
+            <collection property="schoolRolls" resultMap="schoolRollMap"></collection>
+        </resultMap>
+        <resultMap id="schoolRollMap" type="com.ssmStudy.pojo.SchoolRoll">
+            <id property="rollId" column="roll_id"/>
+            <result property="schoolName" column="school_name"/>
+            <result property="stuNo" column="stu_no"/>
+        </resultMap>
+
+    <!--对学生表进行批量插入-->
+    <insert id="insertStu" parameterType="list" >
+        insert into student(number,name,age,sex,grade) values
+        <foreach collection="list" item="stu" index="" separator=",">
+            (#{stu.number},#{stu.name},#{stu.age},#{stu.sex},#{stu.grade})
+        </foreach>
+    </insert>
+</mapper>

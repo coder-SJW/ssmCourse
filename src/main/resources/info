@@ -1,0 +1,12 @@
+
+#配置日志信息输出目的地
+log4j.appender.appenderName = fully.qualified.name.of.appender.class
+org.apache.log4j.ConsoleAppender（控制台）
+#将日志信息输出到一个文件。
+org.apache.log4j.FileAppender
+#将日志信息输出到一个日志文件，并且每天输出到一个新的日志文件。
+org.apache.log4j.DailyRollingFileAppender
+#（文件大小到达指定尺寸的时候产生一个新的文件）
+org.apache.log4j.RollingFileAppender=10K
+#将日志信息以流格式发送到任意指定地方。
+org.apache.log4j.WriterAppender

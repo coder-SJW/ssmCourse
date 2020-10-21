@@ -1,0 +1,73 @@
+<!DOCTYPE mapper
+        PUBLIC "-//mybati.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<!--多条件查询：传参用Map或对象,取值#{key}-->
+<mapper namespace="com.ssmStudy.dao.StudentDao">
+    <select id="selectStu" resultType="hashmap">
+        select * from student
+    </select>
+    <!--单条件查询-->
+    <select id="selectStu2" resultType="hashmap" parameterType="string">
+        select * from student where name=#{name}
+    </select>
+    <!--多条件查询-->
+    <select id="selectStu3" resultType="hashmap" parameterType="hashmap">
+        select * from student where name=#{name} and grade=#{grade}
+    </select>
+    <!--多条件查询，返回自定义类型-->
+    <select id="selectStu4" resultType="com.ssmStudy.pojo.Student" parameterType="com.ssmStudy.pojo.Student">
+        select * from student where name=#{name} and grade=#{grade}
+    </select>
+    <!--插入一条数据（自定义类型）-->
+    <insert id="addStu" parameterType="com.ssmStudy.pojo.Student">
+        insert into student values(#{number},#{name },#{age},#{sex},#{grade})
+    </insert>
+    <!--删除一条数据-->
+    <delete id="deleteStu" parameterType="com.ssmStudy.pojo.Student">
+        delete from student where number =#{number }
+    </delete>
+    <!--查询数据（映射成pojo）-->
+    <select id="selectStu_" resultType="com.ssmStudy.pojo.Student" parameterType="com.ssmStudy.pojo.Student">
+        select * from student where number=#{number}
+    </select>
+    <!--修改一条数据-->
+    <update id="updateStu" parameterType="com.ssmStudy.pojo.Student">
+        update student set sex=#{sex} where number =#{number}
+    </update>
+    <!--******************************************************************************************************************-->
+    <!--resultMap映射-->
+    <resultMap id="teatherMap" type="com.ssmStudy.pojo.Teacher">
+        <id property="teacherId" column="id"/>
+        <result property="teacherName" column="teaName"/>
+    </resultMap>
+    <select id="selectTeacher" resultMap="teatherMap" parameterType="com.ssmStudy.pojo.Teacher">
+        select * from teacher where id = #{teacherId} and teaName = #{teacherName}
+    </select>
+    <!--******************************************************************************************************************-->
+    <!--一对一查询-->
+    <!-- sql关联时以一方为准，join时要注意 -->
+    <select id="selectSchoolRoll" resultMap="schoolRollMap" resultType="String">
+        select * from student left join schoolroll on student.number = schoolroll.stu_no where schoolroll.stu_no = #{stuNo}
+    </select>
+    <resultMap id="schoolRollMap" type="com.ssmStudy.pojo.SchoolRoll">
+        <id property="rollId" column="roll_id"/>
+        <result property="schoolName" column="school_name"/>
+        <result property="stuNo" column="stu_no"/>
+        <!-- 1、圆点记法（一次sql查询） -->
+<!--        <result property="stu.name" column="name"/>-->
+<!--        <result property="stu.age" column="age"/>-->
+<!--        <result property="stu.sex" column="sex"/>-->
+<!--        <result property="stu.grade" column="grade"/>-->
+        <!-- 2、association法（一次sql查询） 推荐使用-->
+        <association property="stu" resultMap="studentMap"></association>
+        <!-- 3、association法(两次sql查询) 特殊情况使用-->
+        <!--<association property="stu" select="" column=""/>-->
+    </resultMap>
+    <resultMap id="studentMap" type="com.ssmStudy.pojo.Student">
+        <id property="number" column="number"/>
+        <result property="name" column="name"/>
+        <result property="age" column="age"/>
+        <result property="sex" column="sex"/>
+        <result property="grade" column="grade"/>
+    </resultMap>
+</mapper>

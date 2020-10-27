@@ -6,7 +6,7 @@
     <!--导入属性配置-->
     <properties resource="jdbc.properties"></properties>
     <!-- 数据库驱动-->
-    <classPathEntry  location="C:\Users\HP\.m2\repository\mysql\mysql-connector-java\8.0.21\mysql-connector-java-8.0.21.jar"/>
+    <classPathEntry  location="/Users/apple/.m2/repository/mysql/mysql-connector-java/8.0.21/mysql-connector-java-8.0.21.jar"/>
     <context id="DB2Tables"  targetRuntime="MyBatis3">
         <commentGenerator>
             <property name="suppressDate" value="true"/>

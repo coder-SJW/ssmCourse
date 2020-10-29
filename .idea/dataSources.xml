@@ -1,14 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="DataSourceManagerImpl" format="xml" multifile-model="true">
-    <data-source source="LOCAL" name="ssmcourse@localhost" uuid="52cb9d10-2c07-4392-b7d3-4fa7358bcb38">
+    <data-source source="LOCAL" name="MySQL - ssmCourse@localhost" uuid="80a17abd-e0bf-44b0-9857-c9e59d4af0cf">
       <driver-ref>mysql.8</driver-ref>
       <synchronize>true</synchronize>
       <jdbc-driver>com.mysql.cj.jdbc.Driver</jdbc-driver>
-      <jdbc-url>jdbc:mysql://localhost:3306/ssmcourse</jdbc-url>
-      <driver-properties>
-        <property name="serverTimezone" value="Asia/Shanghai" />
-      </driver-properties>
+      <jdbc-url>jdbc:mysql://118.178.143.144:3306/ssmCourse?useUnicode=true&amp;characterEncoding=utf8&amp;serverTimezone=UTC&amp;useSSL=false&amp;allowMultiQueries=true</jdbc-url>
     </data-source>
   </component>
 </project>

@@ -9,6 +9,7 @@ import org.apache.ibatis.session.SqlSessionFactoryBuilder;
 
 import java.io.IOException;
 import java.io.InputStream;
+import java.sql.*;
 import java.util.ArrayList;
 import java.util.Collection;
 import java.util.List;
@@ -32,7 +33,6 @@ public class Test {
             SqlSessionFactory factory;
             factory = new SqlSessionFactoryBuilder().build(inputStream);
             sqlSession = factory.openSession();
-
             List<SchoolRoll> res = sqlSession.selectList("selectSchoolRoll","1");
             for(SchoolRoll schoolRoll : res){
                 System.out.println(schoolRoll);

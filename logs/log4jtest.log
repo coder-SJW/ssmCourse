@@ -1,23 +1,59 @@
-2020-10-19 09:54:03 [DEBUG] - org.apache.ibatis.transaction.jdbc.JdbcTransaction -JdbcTransaction.java(91) -Closing JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@68d279ec]
-2020-10-19 09:54:03 [DEBUG] - org.apache.ibatis.datasource.pooled.PooledDataSource -PooledDataSource.java(391) -Returned connection 1758624236 to pool.
-2020-10-20 08:58:29 [DEBUG] - org.apache.ibatis.logging.LogFactory -LogFactory.java(105) -Logging initialized using 'class org.apache.ibatis.logging.log4j.Log4jImpl' adapter.
-2020-10-20 08:58:29 [DEBUG] - org.apache.ibatis.logging.LogFactory -LogFactory.java(105) -Logging initialized using 'class org.apache.ibatis.logging.log4j.Log4jImpl' adapter.
-2020-10-20 08:58:30 [DEBUG] - org.apache.ibatis.datasource.pooled.PooledDataSource -PooledDataSource.java(363) -PooledDataSource forcefully closed/removed all connections.
-2020-10-20 08:58:30 [DEBUG] - org.apache.ibatis.datasource.pooled.PooledDataSource -PooledDataSource.java(363) -PooledDataSource forcefully closed/removed all connections.
-2020-10-20 08:58:30 [DEBUG] - org.apache.ibatis.datasource.pooled.PooledDataSource -PooledDataSource.java(363) -PooledDataSource forcefully closed/removed all connections.
-2020-10-20 08:58:30 [DEBUG] - org.apache.ibatis.datasource.pooled.PooledDataSource -PooledDataSource.java(363) -PooledDataSource forcefully closed/removed all connections.
-2020-10-20 09:00:05 [DEBUG] - org.apache.ibatis.logging.LogFactory -LogFactory.java(105) -Logging initialized using 'class org.apache.ibatis.logging.log4j.Log4jImpl' adapter.
-2020-10-20 09:00:05 [DEBUG] - org.apache.ibatis.logging.LogFactory -LogFactory.java(105) -Logging initialized using 'class org.apache.ibatis.logging.log4j.Log4jImpl' adapter.
-2020-10-20 09:00:05 [DEBUG] - org.apache.ibatis.datasource.pooled.PooledDataSource -PooledDataSource.java(363) -PooledDataSource forcefully closed/removed all connections.
-2020-10-20 09:00:05 [DEBUG] - org.apache.ibatis.datasource.pooled.PooledDataSource -PooledDataSource.java(363) -PooledDataSource forcefully closed/removed all connections.
-2020-10-20 09:00:05 [DEBUG] - org.apache.ibatis.datasource.pooled.PooledDataSource -PooledDataSource.java(363) -PooledDataSource forcefully closed/removed all connections.
-2020-10-20 09:00:05 [DEBUG] - org.apache.ibatis.datasource.pooled.PooledDataSource -PooledDataSource.java(363) -PooledDataSource forcefully closed/removed all connections.
-2020-10-20 09:00:05 [DEBUG] - org.apache.ibatis.transaction.jdbc.JdbcTransaction -JdbcTransaction.java(137) -Opening JDBC Connection
-2020-10-20 09:00:06 [DEBUG] - org.apache.ibatis.datasource.pooled.PooledDataSource -PooledDataSource.java(434) -Created connection 1818339587.
-2020-10-20 09:00:06 [DEBUG] - org.apache.ibatis.transaction.jdbc.JdbcTransaction -JdbcTransaction.java(101) -Setting autocommit to false on JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@6c61a903]
-2020-10-20 09:00:06 [DEBUG] - com.ssmStudy.dao.StudentDao.selectStu -BaseJdbcLogger.java(137) -==>  Preparing: select * from student
-2020-10-20 09:00:06 [DEBUG] - com.ssmStudy.dao.StudentDao.selectStu -BaseJdbcLogger.java(137) -==> Parameters: 
-2020-10-20 09:00:06 [DEBUG] - com.ssmStudy.dao.StudentDao.selectStu -BaseJdbcLogger.java(137) -<==      Total: 9
-2020-10-20 09:00:06 [DEBUG] - org.apache.ibatis.transaction.jdbc.JdbcTransaction -JdbcTransaction.java(123) -Resetting autocommit to true on JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@6c61a903]
-2020-10-20 09:00:06 [DEBUG] - org.apache.ibatis.transaction.jdbc.JdbcTransaction -JdbcTransaction.java(91) -Closing JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@6c61a903]
-2020-10-20 09:00:06 [DEBUG] - org.apache.ibatis.datasource.pooled.PooledDataSource -PooledDataSource.java(391) -Returned connection 1818339587 to pool.
+2020-10-22 22:48:36 [DEBUG] - org.apache.ibatis.logging.LogFactory -LogFactory.java(105) -Logging initialized using 'class org.apache.ibatis.logging.log4j.Log4jImpl' adapter.
+2020-10-22 22:48:37 [DEBUG] - org.apache.ibatis.datasource.pooled.PooledDataSource -PooledDataSource.java(363) -PooledDataSource forcefully closed/removed all connections.
+2020-10-22 22:48:37 [DEBUG] - org.apache.ibatis.datasource.pooled.PooledDataSource -PooledDataSource.java(363) -PooledDataSource forcefully closed/removed all connections.
+2020-10-22 22:48:37 [DEBUG] - org.apache.ibatis.datasource.pooled.PooledDataSource -PooledDataSource.java(363) -PooledDataSource forcefully closed/removed all connections.
+2020-10-22 22:48:37 [DEBUG] - org.apache.ibatis.datasource.pooled.PooledDataSource -PooledDataSource.java(363) -PooledDataSource forcefully closed/removed all connections.
+2020-10-22 22:48:37 [DEBUG] - org.apache.ibatis.transaction.jdbc.JdbcTransaction -JdbcTransaction.java(137) -Opening JDBC Connection
+2020-10-22 22:48:38 [DEBUG] - org.apache.ibatis.datasource.pooled.PooledDataSource -PooledDataSource.java(434) -Created connection 644082020.
+2020-10-22 22:48:38 [DEBUG] - org.apache.ibatis.transaction.jdbc.JdbcTransaction -JdbcTransaction.java(101) -Setting autocommit to false on JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@2663e964]
+2020-10-22 22:48:38 [DEBUG] - com.ssmStudy.dao.StudentDao.selectSchoolRoll -BaseJdbcLogger.java(137) -==>  Preparing: select * from student left join schoolroll on student.number = schoolroll.stu_no where schoolroll.stu_no = ?
+2020-10-22 22:48:38 [DEBUG] - com.ssmStudy.dao.StudentDao.selectSchoolRoll -BaseJdbcLogger.java(137) -==> Parameters: 1(String)
+2020-10-22 22:48:38 [DEBUG] - com.ssmStudy.dao.StudentDao.selectSchoolRoll -BaseJdbcLogger.java(137) -<==      Total: 2
+2020-10-22 22:48:38 [DEBUG] - org.apache.ibatis.transaction.jdbc.JdbcTransaction -JdbcTransaction.java(123) -Resetting autocommit to true on JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@2663e964]
+2020-10-22 22:48:38 [DEBUG] - org.apache.ibatis.transaction.jdbc.JdbcTransaction -JdbcTransaction.java(91) -Closing JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@2663e964]
+2020-10-22 22:48:38 [DEBUG] - org.apache.ibatis.datasource.pooled.PooledDataSource -PooledDataSource.java(391) -Returned connection 644082020 to pool.
+2020-10-23 10:13:15 [DEBUG] - org.apache.ibatis.logging.LogFactory -LogFactory.java(105) -Logging initialized using 'class org.apache.ibatis.logging.log4j.Log4jImpl' adapter.
+2020-10-23 10:13:15 [DEBUG] - org.apache.ibatis.logging.LogFactory -LogFactory.java(105) -Logging initialized using 'class org.apache.ibatis.logging.log4j.Log4jImpl' adapter.
+2020-10-23 10:13:15 [DEBUG] - org.apache.ibatis.datasource.pooled.PooledDataSource -PooledDataSource.java(363) -PooledDataSource forcefully closed/removed all connections.
+2020-10-23 10:13:15 [DEBUG] - org.apache.ibatis.datasource.pooled.PooledDataSource -PooledDataSource.java(363) -PooledDataSource forcefully closed/removed all connections.
+2020-10-23 10:13:15 [DEBUG] - org.apache.ibatis.datasource.pooled.PooledDataSource -PooledDataSource.java(363) -PooledDataSource forcefully closed/removed all connections.
+2020-10-23 10:13:15 [DEBUG] - org.apache.ibatis.datasource.pooled.PooledDataSource -PooledDataSource.java(363) -PooledDataSource forcefully closed/removed all connections.
+2020-10-23 10:13:16 [DEBUG] - org.apache.ibatis.transaction.jdbc.JdbcTransaction -JdbcTransaction.java(137) -Opening JDBC Connection
+2020-10-23 10:13:19 [DEBUG] - org.apache.ibatis.datasource.pooled.PooledDataSource -PooledDataSource.java(434) -Created connection 2079565272.
+2020-10-23 10:13:19 [DEBUG] - org.apache.ibatis.transaction.jdbc.JdbcTransaction -JdbcTransaction.java(101) -Setting autocommit to false on JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@7bf3a5d8]
+2020-10-23 10:13:19 [DEBUG] - com.ssmStudy.dao.StudentDao.selectSchoolRoll -BaseJdbcLogger.java(137) -==>  Preparing: select * from student left join schoolroll on student.number = schoolroll.stu_no where schoolroll.stu_no = ?
+2020-10-23 10:13:19 [DEBUG] - com.ssmStudy.dao.StudentDao.selectSchoolRoll -BaseJdbcLogger.java(137) -==> Parameters: 1(String)
+2020-10-23 10:13:19 [DEBUG] - com.ssmStudy.dao.StudentDao.selectSchoolRoll -BaseJdbcLogger.java(137) -<==      Total: 2
+2020-10-23 10:13:19 [DEBUG] - org.apache.ibatis.transaction.jdbc.JdbcTransaction -JdbcTransaction.java(123) -Resetting autocommit to true on JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@7bf3a5d8]
+2020-10-23 10:13:19 [DEBUG] - org.apache.ibatis.transaction.jdbc.JdbcTransaction -JdbcTransaction.java(91) -Closing JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@7bf3a5d8]
+2020-10-23 10:13:19 [DEBUG] - org.apache.ibatis.datasource.pooled.PooledDataSource -PooledDataSource.java(391) -Returned connection 2079565272 to pool.
+2020-10-24 15:42:07 [DEBUG] - org.apache.ibatis.logging.LogFactory -LogFactory.java(105) -Logging initialized using 'class org.apache.ibatis.logging.log4j.Log4jImpl' adapter.
+2020-10-24 15:42:07 [DEBUG] - org.apache.ibatis.logging.LogFactory -LogFactory.java(105) -Logging initialized using 'class org.apache.ibatis.logging.log4j.Log4jImpl' adapter.
+2020-10-24 15:42:07 [DEBUG] - org.apache.ibatis.datasource.pooled.PooledDataSource -PooledDataSource.java(363) -PooledDataSource forcefully closed/removed all connections.
+2020-10-24 15:42:07 [DEBUG] - org.apache.ibatis.datasource.pooled.PooledDataSource -PooledDataSource.java(363) -PooledDataSource forcefully closed/removed all connections.
+2020-10-24 15:42:07 [DEBUG] - org.apache.ibatis.datasource.pooled.PooledDataSource -PooledDataSource.java(363) -PooledDataSource forcefully closed/removed all connections.
+2020-10-24 15:42:07 [DEBUG] - org.apache.ibatis.datasource.pooled.PooledDataSource -PooledDataSource.java(363) -PooledDataSource forcefully closed/removed all connections.
+2020-10-24 15:42:08 [DEBUG] - org.apache.ibatis.transaction.jdbc.JdbcTransaction -JdbcTransaction.java(137) -Opening JDBC Connection
+2020-10-24 15:42:10 [DEBUG] - org.apache.ibatis.datasource.pooled.PooledDataSource -PooledDataSource.java(434) -Created connection 1865516976.
+2020-10-24 15:42:10 [DEBUG] - org.apache.ibatis.transaction.jdbc.JdbcTransaction -JdbcTransaction.java(101) -Setting autocommit to false on JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@6f3187b0]
+2020-10-24 15:42:10 [DEBUG] - com.ssmStudy.dao.StudentDao.selectSchoolRoll -BaseJdbcLogger.java(137) -==>  Preparing: select * from student left join schoolroll on student.number = schoolroll.stu_no where schoolroll.stu_no = ?
+2020-10-24 15:42:10 [DEBUG] - com.ssmStudy.dao.StudentDao.selectSchoolRoll -BaseJdbcLogger.java(137) -==> Parameters: 1(String)
+2020-10-24 15:42:10 [DEBUG] - com.ssmStudy.dao.StudentDao.selectSchoolRoll -BaseJdbcLogger.java(137) -<==      Total: 2
+2020-10-24 15:42:10 [DEBUG] - org.apache.ibatis.transaction.jdbc.JdbcTransaction -JdbcTransaction.java(123) -Resetting autocommit to true on JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@6f3187b0]
+2020-10-24 15:42:11 [DEBUG] - org.apache.ibatis.transaction.jdbc.JdbcTransaction -JdbcTransaction.java(91) -Closing JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@6f3187b0]
+2020-10-24 15:42:11 [DEBUG] - org.apache.ibatis.datasource.pooled.PooledDataSource -PooledDataSource.java(391) -Returned connection 1865516976 to pool.
+2020-10-27 08:31:23 [DEBUG] - org.apache.ibatis.logging.LogFactory -LogFactory.java(105) -Logging initialized using 'class org.apache.ibatis.logging.log4j.Log4jImpl' adapter.
+2020-10-27 08:31:23 [DEBUG] - org.apache.ibatis.logging.LogFactory -LogFactory.java(105) -Logging initialized using 'class org.apache.ibatis.logging.log4j.Log4jImpl' adapter.
+2020-10-27 08:31:25 [DEBUG] - org.apache.ibatis.datasource.pooled.PooledDataSource -PooledDataSource.java(363) -PooledDataSource forcefully closed/removed all connections.
+2020-10-27 08:31:25 [DEBUG] - org.apache.ibatis.datasource.pooled.PooledDataSource -PooledDataSource.java(363) -PooledDataSource forcefully closed/removed all connections.
+2020-10-27 08:31:25 [DEBUG] - org.apache.ibatis.datasource.pooled.PooledDataSource -PooledDataSource.java(363) -PooledDataSource forcefully closed/removed all connections.
+2020-10-27 08:31:25 [DEBUG] - org.apache.ibatis.datasource.pooled.PooledDataSource -PooledDataSource.java(363) -PooledDataSource forcefully closed/removed all connections.
+2020-10-27 08:31:26 [DEBUG] - org.apache.ibatis.transaction.jdbc.JdbcTransaction -JdbcTransaction.java(137) -Opening JDBC Connection
+2020-10-27 08:31:30 [DEBUG] - org.apache.ibatis.datasource.pooled.PooledDataSource -PooledDataSource.java(434) -Created connection 2079565272.
+2020-10-27 08:31:30 [DEBUG] - org.apache.ibatis.transaction.jdbc.JdbcTransaction -JdbcTransaction.java(101) -Setting autocommit to false on JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@7bf3a5d8]
+2020-10-27 08:31:31 [DEBUG] - com.ssmStudy.dao.StudentDao.selectSchoolRoll -BaseJdbcLogger.java(137) -==>  Preparing: select * from student left join schoolroll on student.number = schoolroll.stu_no where schoolroll.stu_no = ?
+2020-10-27 08:31:31 [DEBUG] - com.ssmStudy.dao.StudentDao.selectSchoolRoll -BaseJdbcLogger.java(137) -==> Parameters: 1(String)
+2020-10-27 08:31:31 [DEBUG] - com.ssmStudy.dao.StudentDao.selectSchoolRoll -BaseJdbcLogger.java(137) -<==      Total: 2
+2020-10-27 08:31:31 [DEBUG] - org.apache.ibatis.transaction.jdbc.JdbcTransaction -JdbcTransaction.java(123) -Resetting autocommit to true on JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@7bf3a5d8]
+2020-10-27 08:31:31 [DEBUG] - org.apache.ibatis.transaction.jdbc.JdbcTransaction -JdbcTransaction.java(91) -Closing JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@7bf3a5d8]
+2020-10-27 08:31:31 [DEBUG] - org.apache.ibatis.datasource.pooled.PooledDataSource -PooledDataSource.java(391) -Returned connection 2079565272 to pool.

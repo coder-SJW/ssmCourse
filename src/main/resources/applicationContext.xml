@@ -10,22 +10,18 @@
     <!-- 载入jdbc配置文件 -->
     <context:property-placeholder location="classpath:jdbc.properties"/>
     <!-- 打开注解模式:扫描指定包下的注解 -->
-<!--    <context:component-scan base-package="com.*"></context:component-scan>-->
+    <context:component-scan base-package="com.*"></context:component-scan>
     <!-- 开启事务注解 -->
-<!--    <tx:annotation-driven transaction-manager="dataSourceTransactionManager"/>-->
+    <!--<tx:annotation-driven transaction-manager="dataSourceTransactionManager"/>-->
 
     <!--spring容器管理对象 （容器创建时实例化）-->
     <bean id="eggRice" class="com.ssmStudy.pojo.EggRice">
     </bean>
     <bean id="people" class="com.ssmStudy.pojo.People">
         <!-- 依赖注入（set方法注入），类必须有对应的set方法 -->
-        <property name="eggRice" ref="eggRice"/>
-
+        <property name="rice" ref="eggRice"/>
         <!-- 依赖注入（构造方法方法注入），类必须有对应的带参构造方法 -->
-        <!--
-        <constructor-arg name="sex" value="男"/>
-        <constructor-arg name="userName" value="史继炜"/>
-        -->
+<!--        <constructor-arg name="rice" ref="eggRice"/>-->
     </bean>
 
     <!-- AOP目标类 -->
@@ -34,7 +30,6 @@
 <!--    </bean>-->
     <!-- 切面类 -->
 <!--    <bean id="aopDemo" class="com.dao.AopDemo">-->
-
 <!--    </bean>-->
     <!-- AOP配置 -->
 <!--    <aop:config>-->

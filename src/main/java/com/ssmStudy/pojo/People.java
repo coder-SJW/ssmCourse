@@ -4,16 +4,21 @@ package com.ssmStudy.pojo;
  * used for spring test
  */
 public class People {
-    EggRice eggRice;
-
-    public EggRice getEggRice() {
-        return eggRice;
+    private Rice rice;
+    public  People(){};
+    public People(Rice rice) {
+        this.rice = rice;
     }
 
-    public void setEggRice(EggRice eggRice) {
-        this.eggRice = eggRice;
+    public Rice getRice() {
+        return rice;
     }
+
+    public void setRice(Rice rice) {
+        this.rice = rice;
+    }
+
     public void eat(){
-        eggRice.showName();
+        rice.showName();
     }
 }

@@ -1,0 +1,283 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="BRANCH:master" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </select>
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="c49612cb-f67c-46c0-a98b-19e8367b6143" name="Default Changelist" comment="spring初试">
+      <change afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/ssmCourse.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/ssmStudy/pojo/MeatRice.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/ssmStudy/pojo/Rice.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/log4jtest.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/log4jtest.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/log4jtest.log.1" beforeDir="false" afterPath="$PROJECT_DIR$/logs/log4jtest.log.1" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/log4jtest.log.2" beforeDir="false" afterPath="$PROJECT_DIR$/logs/log4jtest.log.2" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/log4jtest.log.3" beforeDir="false" afterPath="$PROJECT_DIR$/logs/log4jtest.log.3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/log4jtest.log.4" beforeDir="false" afterPath="$PROJECT_DIR$/logs/log4jtest.log.4" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/log4jtest.log.5" beforeDir="false" afterPath="$PROJECT_DIR$/logs/log4jtest.log.5" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/log4jtest.log.6" beforeDir="false" afterPath="$PROJECT_DIR$/logs/log4jtest.log.6" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/log4jtest.log.7" beforeDir="false" afterPath="$PROJECT_DIR$/logs/log4jtest.log.7" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/log4jtest.log.8" beforeDir="false" afterPath="$PROJECT_DIR$/logs/log4jtest.log.8" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/log4jtest.log.9" beforeDir="false" afterPath="$PROJECT_DIR$/logs/log4jtest.log.9" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/ssmStudy/pojo/EggRice.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ssmStudy/pojo/EggRice.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/ssmStudy/pojo/People.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ssmStudy/pojo/People.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/applicationContext.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/applicationContext.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Test.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Test.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Main.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Main2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Test.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/jdbc.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/jdbc.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/Test.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/Test.class" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+        <option value="Interface" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectId" id="1jBqU1YYzruqBre44SHJWCZLpCA" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="DatabaseDriversLRU" value="mysql" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="project.structure.last.edited" value="Artifacts" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.27816093" />
+    <property name="settings.editor.selected.configurable" value="org.jetbrains.plugins.github.ui.GithubSettingsConfigurable" />
+  </component>
+  <component name="RunManager" selected="JUnit.SpringTest.startSpring">
+    <configuration name="SpringTest.startSpring" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="ssmCourse" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="SpringTest" />
+      <option name="METHOD_NAME" value="startSpring" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SpringTest.string" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="ssmCourse" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="SpringTest" />
+      <option name="METHOD_NAME" value="string" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Test.selectSchoolRoll" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="ssmCourse" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="Test" />
+      <option name="METHOD_NAME" value="selectSchoolRoll" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Test.selectStu" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="ssmCourse" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="Test" />
+      <option name="METHOD_NAME" value="selectStu" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Test.test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="ssmCourse" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="Test" />
+      <option name="METHOD_NAME" value="test" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.SpringTest.startSpring" />
+        <item itemvalue="JUnit.SpringTest.string" />
+        <item itemvalue="JUnit.Test.selectSchoolRoll" />
+        <item itemvalue="JUnit.Test.selectStu" />
+        <item itemvalue="JUnit.Test.test" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="c49612cb-f67c-46c0-a98b-19e8367b6143" name="Default Changelist" comment="" />
+      <created>1603287845045</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1603287845045</updated>
+      <workItem from="1603287847339" duration="8070000" />
+      <workItem from="1603296535507" duration="2125000" />
+      <workItem from="1603333565837" duration="7409000" />
+      <workItem from="1603370028951" duration="7738000" />
+      <workItem from="1603525278951" duration="1290000" />
+      <workItem from="1603758574039" duration="7811000" />
+      <workItem from="1603848033755" duration="6182000" />
+    </task>
+    <task id="LOCAL-00001" summary="加入spring相关包">
+      <created>1603759921214</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1603759921214</updated>
+    </task>
+    <task id="LOCAL-00002" summary="spring初试">
+      <created>1603808241467</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1603808241467</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="2" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="master" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="加入spring相关包" />
+    <MESSAGE value="spring初试" />
+    <option name="LAST_COMMIT_MESSAGE" value="spring初试" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="611" y="320" key="#Notifications" timestamp="1603417482351">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state x="611" y="320" key="#Notifications/0.0.1440.900@0.0.1440.900" timestamp="1603417482351" />
+    <state x="454" y="157" width="800" height="573" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1603377554981">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state x="454" y="157" width="800" height="573" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1440.900@0.0.1440.900" timestamp="1603377554981" />
+    <state x="533" y="141" key="#com.intellij.ide.util.MemberChooser" timestamp="1603941266189">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state x="533" y="141" key="#com.intellij.ide.util.MemberChooser/0.0.1440.900@0.0.1440.900" timestamp="1603941266189" />
+    <state x="594" y="319" key="Github.ShareDialog" timestamp="1603848971584">
+      <screen x="0" y="23" width="1440" height="784" />
+    </state>
+    <state x="594" y="319" key="Github.ShareDialog/0.23.1440.784@0.23.1440.784" timestamp="1603848971584" />
+    <state width="1398" height="424" key="GridCell.Tab.0.bottom" timestamp="1603941331777">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state width="1398" height="424" key="GridCell.Tab.0.bottom/0.0.1440.900@0.0.1440.900" timestamp="1603941331777" />
+    <state width="1398" height="38" key="GridCell.Tab.0.bottom/0.23.1440.784@0.23.1440.784" timestamp="1603810209678" />
+    <state width="1398" height="424" key="GridCell.Tab.0.center" timestamp="1603941331775">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state width="1398" height="424" key="GridCell.Tab.0.center/0.0.1440.900@0.0.1440.900" timestamp="1603941331775" />
+    <state width="1398" height="38" key="GridCell.Tab.0.center/0.23.1440.784@0.23.1440.784" timestamp="1603810209677" />
+    <state width="1398" height="424" key="GridCell.Tab.0.left" timestamp="1603941331774">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state width="1398" height="424" key="GridCell.Tab.0.left/0.0.1440.900@0.0.1440.900" timestamp="1603941331774" />
+    <state width="1398" height="38" key="GridCell.Tab.0.left/0.23.1440.784@0.23.1440.784" timestamp="1603810209677" />
+    <state width="1398" height="424" key="GridCell.Tab.0.right" timestamp="1603941331776">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state width="1398" height="424" key="GridCell.Tab.0.right/0.0.1440.900@0.0.1440.900" timestamp="1603941331776" />
+    <state width="1398" height="38" key="GridCell.Tab.0.right/0.23.1440.784@0.23.1440.784" timestamp="1603810209678" />
+    <state width="233" height="457" key="HiddenNamespacesPopup" timestamp="1603293519165">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state width="233" height="457" key="HiddenNamespacesPopup/0.0.1440.900@0.0.1440.900" timestamp="1603293519165" />
+    <state x="229" y="78" key="SettingsEditor" timestamp="1603848938856">
+      <screen x="0" y="23" width="1440" height="784" />
+    </state>
+    <state x="229" y="63" key="SettingsEditor/0.0.1440.900@0.0.1440.900" timestamp="1603419184043" />
+    <state x="229" y="78" key="SettingsEditor/0.23.1440.784@0.23.1440.784" timestamp="1603848938856" />
+    <state x="320" y="190" key="Vcs.Push.Dialog.v2" timestamp="1603808248360">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state x="320" y="190" key="Vcs.Push.Dialog.v2/0.0.1440.900@0.0.1440.900" timestamp="1603808248360" />
+    <state x="523" y="371" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1603758595879">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state x="523" y="371" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1440.900@0.0.1440.900" timestamp="1603758595879" />
+    <state x="385" y="196" width="670" height="676" key="search.everywhere.popup" timestamp="1603942083029">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state x="385" y="196" width="670" height="676" key="search.everywhere.popup/0.0.1440.900@0.0.1440.900" timestamp="1603942083029" />
+  </component>
+</project>

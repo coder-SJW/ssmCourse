@@ -7,6 +7,8 @@
            http://www.springframework.org/schema/beans/spring-beans.xsd
            http://www.springframework.org/schema/context
            https://www.springframework.org/schema/context/spring-context.xsd">
+    <!--引入其他配置文件-->
+    <!--<import resource=""/>-->
     <!-- 载入jdbc配置文件 -->
     <context:property-placeholder location="classpath:jdbc.properties"/>
     <!-- 打开注解模式:扫描指定包下的注解 -->
@@ -21,48 +23,102 @@
         <!-- 依赖注入（set方法注入），类必须有对应的set方法 -->
         <property name="rice" ref="eggRice"/>
         <!-- 依赖注入（构造方法方法注入），类必须有对应的带参构造方法 -->
-<!--        <constructor-arg name="rice" ref="eggRice"/>-->
+        <!--<constructor-arg name="rice" ref="eggRice"/>-->
+        <!--注入List集合-->
+        <property name="list">
+            <list>
+                <!--list里注入简单类型-->
+                <value>我是list里注入简单类型</value>
+            </list>
+        </property>
+        <!--注入List集合-->
+        <property name="listForBean">
+            <list>
+                <!--list里注入bean-->
+                <ref bean="eggRice"></ref>
+            </list>
+        </property>
+        <!--注入Map集合-->
+        <property name="map">
+            <map>
+                <!--map里注入简单类型-->
+                <entry key="a" value="我是map里注入简单类型"></entry>
+            </map>
+        </property>
+        <!--注入Map集合-->
+        <property name="mapForBean">
+            <map>
+                <!--map里注入bean-->
+                <entry key="a" value-ref="eggRice"></entry>
+            </map>
+        </property>
+        <!--注入Set集合-->
+        <property name="set">
+            <set>
+                <!--set里注入简单类型-->
+                <value>我是set里注入简单类型</value>
+            </set>
+        </property>
+        <!--注入Set集合-->
+        <property name="setForBean">
+            <set>
+                <!--set里注入bean-->
+                <ref bean="eggRice"></ref>
+            </set>
+        </property>
+        <!--注入数组-->
+        <property name="riceArr">
+            <array>
+                <!--数组里注入bean-->
+                <ref bean="eggRice"></ref>
+            </array>
+        </property>
+       <property name="mapPro">
+           <props>
+               <prop key="a">我是用props注入简单类型</prop>
+           </props>
+       </property>
     </bean>
 
     <!-- AOP目标类 -->
-<!--    <bean id="userDao" class="com.dao.UserDaoImpl">-->
+    <!--    <bean id="userDao" class="com.dao.UserDaoImpl">-->
 
-<!--    </bean>-->
+    <!--    </bean>-->
     <!-- 切面类 -->
-<!--    <bean id="aopDemo" class="com.dao.AopDemo">-->
-<!--    </bean>-->
+    <!--    <bean id="aopDemo" class="com.dao.AopDemo">-->
+    <!--    </bean>-->
     <!-- AOP配置 -->
-<!--    <aop:config>-->
-<!--        &lt;!&ndash; 配置切入点表达式，哪些目标的哪些方法需要进行增强 &ndash;&gt;-->
-<!--        <aop:pointcut id="p1" expression="execution(* com.dao.UserDao.findAll(..))"/>-->
-<!--        &lt;!&ndash; 切面配置 &ndash;&gt;-->
-<!--        <aop:aspect ref="aopDemo">-->
-<!--            &lt;!&ndash; 配置前置通知指向切面中的方法，    切入点指向p1 &ndash;&gt;-->
-<!--            <aop:before method="befor" pointcut-ref="p1"/>-->
-<!--        </aop:aspect>-->
-<!--    </aop:config>-->
+    <!--    <aop:config>-->
+    <!--        &lt;!&ndash; 配置切入点表达式，哪些目标的哪些方法需要进行增强 &ndash;&gt;-->
+    <!--        <aop:pointcut id="p1" expression="execution(* com.dao.UserDao.findAll(..))"/>-->
+    <!--        &lt;!&ndash; 切面配置 &ndash;&gt;-->
+    <!--        <aop:aspect ref="aopDemo">-->
+    <!--            &lt;!&ndash; 配置前置通知指向切面中的方法，    切入点指向p1 &ndash;&gt;-->
+    <!--            <aop:before method="befor" pointcut-ref="p1"/>-->
+    <!--        </aop:aspect>-->
+    <!--    </aop:config>-->
 
     <!-- 连接池对象 -->
-<!--    <bean id="managerDataSource" class="org.springframework.jdbc.datasource.DriverManagerDataSource">-->
-<!--        <property name="driverClassName" value="${jdbc.className}"/>-->
-<!--        <property name="url" value="${jdbc.url}"/>-->
-<!--        <property name="username" value="${jdbc.user}"/>-->
-<!--        <property name="password" value="${jdbc.password}"/>-->
-<!--    </bean>-->
-<!--    &lt;!&ndash; spring JDBC模板对象 &ndash;&gt;-->
-<!--    <bean id="jdbcTemplate" class="org.springframework.jdbc.core.JdbcTemplate">-->
-<!--        <property name="dataSource" ref="managerDataSource"/>-->
-<!--    </bean>-->
+    <!--    <bean id="managerDataSource" class="org.springframework.jdbc.datasource.DriverManagerDataSource">-->
+    <!--        <property name="driverClassName" value="${jdbc.className}"/>-->
+    <!--        <property name="url" value="${jdbc.url}"/>-->
+    <!--        <property name="username" value="${jdbc.user}"/>-->
+    <!--        <property name="password" value="${jdbc.password}"/>-->
+    <!--    </bean>-->
+    <!--    &lt;!&ndash; spring JDBC模板对象 &ndash;&gt;-->
+    <!--    <bean id="jdbcTemplate" class="org.springframework.jdbc.core.JdbcTemplate">-->
+    <!--        <property name="dataSource" ref="managerDataSource"/>-->
+    <!--    </bean>-->
 
-<!--    &lt;!&ndash; Spring事务学习 &ndash;&gt;-->
-<!--    &lt;!&ndash; 平台事务管理器 &ndash;&gt;-->
-<!--    <bean id="dataSourceTransactionManager" class="org.springframework.jdbc.datasource.DataSourceTransactionManager">-->
-<!--        <property name="dataSource" ref="managerDataSource"/>-->
-<!--    </bean>-->
-<!--    &lt;!&ndash; 1、spring 事务管理模板类 (编程式事务管理) &ndash;&gt;-->
-<!--    <bean id="transactionTemplate" class="org.springframework.transaction.support.TransactionTemplate">-->
-<!--        <property name="transactionManager" ref="dataSourceTransactionManager"/>-->
-<!--    </bean>-->
+    <!--    &lt;!&ndash; Spring事务学习 &ndash;&gt;-->
+    <!--    &lt;!&ndash; 平台事务管理器 &ndash;&gt;-->
+    <!--    <bean id="dataSourceTransactionManager" class="org.springframework.jdbc.datasource.DataSourceTransactionManager">-->
+    <!--        <property name="dataSource" ref="managerDataSource"/>-->
+    <!--    </bean>-->
+    <!--    &lt;!&ndash; 1、spring 事务管理模板类 (编程式事务管理) &ndash;&gt;-->
+    <!--    <bean id="transactionTemplate" class="org.springframework.transaction.support.TransactionTemplate">-->
+    <!--        <property name="transactionManager" ref="dataSourceTransactionManager"/>-->
+    <!--    </bean>-->
     <!-- 2、使用AOP的事务 -->
     <!-- &lt;!&ndash; 事务增强 &ndash;&gt;
      <tx:advice id="tdAdvice" transaction-manager="dataSourceTransactionManager" >
